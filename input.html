@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Formulari</title>
+        <meta charset="UTF-8"> <!--Etiqueta per a que llitja els accents--> 
+        <meta name="author" content="Joaquim Molina">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!--Per a fer que les pàgines s'adaptena la pantalla -->
+    </head>    
+    <body>
+        <p>Exemple d'una llegenda de formulari</p>
+        <form>
+            <label for="iname">Nom:</label>
+            <input id="iname" type="text" name="name" placeholder="Name">
+            <br>
+            <label for="iemail">Email:</label>
+            <input id="iemail" type="email" name="email" placeholder="Email">
+            <br>
+            <label for="iboto">Botó:</label>
+            <input id="iboto" type="submit" value="Button">
+            <br>
+            <label for="icheck">Un sol Checkbox:</label>
+            <input id="icheck" type="checkbox" name="check">
+            <br>
+            <table>Grup de checkboxes:
+                <tr>
+                    <td><label for="icheck1">Checkbox 1:</label>
+                        <input id="icheck1" type="checkbox" name="check" value="1"></td>
+                    <td><label for="icheck2">Checkbox 2:</label>
+                        <input id="icheck2" type="checkbox" name="check" value="2"></td>
+                    <td><label for="icheck3">Checkbox 3:</label>
+                        <input id="icheck3" type="checkbox" name="check" value="3"></td>
+                        
+                </tr>
+
+            </table>
+            <br>
+            <label for="icolor">Color:</label>
+            <input id="icolor" type="color" name="color">
+            <br>
+            <label for="idate">Data:</label>
+            <input id="idate" type="date" name="date">
+            <br>
+            <label for="idatetime">Data, Hora(Local):</label>
+            <input id="idatetime" type="datetime-local" name="datetime">
+            <br>
+            <label for="ifile">Fitxer:</label>
+            <input id="ifile" type="file" name="file" value="Navega" multiple>
+            <br>
+            <label for="inumber">Número:</label>
+            <input id="inumber" type="number" name="number">
+            <br>
+            <label for="ipassword">Contrasenya:</label>
+            <input id="ipassword" type="password" name="password">
+            <br>
+            <label for="iradio">Un Radio:</label>
+            <input id="iradio" type="radio" name="radio">
+            <br>
+            <table>Grup de Radios:
+                <tr>
+                    <td>Radio 1:<input type="radio" name="radio" value="1"></td>
+                    <td>Radio 2:<input type="radio" name="radio" value="2"></td>
+                    <td>Radio 3:<input type="radio" name="radio" value="3"></td>
+                    <td>Radio 4:<input type="radio" name="radio" value="4"></td>
+                        
+                </tr>
+
+            </table>
+            <label for="irange">Rang:</label>
+            <input id="irange" type="range" name="range" min="0" max="50">
+            <br>
+
+
+            <label for="ireset">Reset:</label>
+            <input id="ireset" type="reset" value="reset">
+            <br>
+            <label for="itime">Hora:</label>
+            <input id="itime" type="time" name="time">
+            <br>
+            <label for="isearch">Cerca:</label>
+            <input id="isearch" type="search" name="search" placeholder="search">
+            <br>
+            <label for="iphone">Tel:</label>
+            <input id="iphone" type="tel" name="phone" placeholder="tel">
+            <br>
+            <label for="itext">Text:</label>
+            <input id="itext" type="text" name="text" placeholder="text">
+            <br>
+            <label for="iurl">URL:</label>
+            <input id="iurl" type="url" name="url" placeholder="url">
+            <br>
+            <input type="submit" value="Açò és un botó!">
+            <br>
+            Select 1:
+            <Select name="Test">
+                <optgroup>
+                    <option value="1">Test1</option>
+                    <option value="2">Test2</option>
+                    <option value="3">Test3</option>                 
+                </optgroup>
+            </Select>
+            <br>
+            Select 2:
+            <select name="Test2" size=2>
+                <optgroup>
+                    <option value="1">Test</option> 
+                    <option value="2">Test</option>
+                </optgroup>                
+            </select>
+            <br>
+            Select Multiple:
+            <select name="TestMultiple">
+                <optgroup label="First Group"> 
+                    <option value="1">Test</option> 
+                    <option value="2">Test</option> 
+                </optgroup> 
+                <optgroup label="Second Group"> 
+                    <option value="3">Test</option> 
+                    <option value="4">Test</option> 
+                </optgroup>
+                <optgroup label="Third Group">
+                    <option value="5">Test</option>
+                    <option value="6">Test</option>
+                </optgroup> 
+            </select>
+            <br>
+            Un textarea!
+            <textarea name="missatge" placeholder="A paragraph in here"></textarea>          
+            <br>
+            <input type="submit" value="Go">
+        </form>
+    </body>
+</html>
